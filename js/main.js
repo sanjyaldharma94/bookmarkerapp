@@ -21,7 +21,7 @@ localStorage.removeItem('test');*/
 if(localStorage.getItem('bookmark') === null){
 	var bookmarks = [];
 	bookmarks.push(bookmark);
-	localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+	localStorage.setItem('bookmarks', JSON.stringify(bookmark));
 } else{
 	//get bookmarks from localstorage
 	var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
