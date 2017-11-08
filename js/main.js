@@ -18,10 +18,10 @@ var bookmark = {
 localStorage.setItem('test', "Hello World");
 console.log(localStorage.getItem('test,'));
 localStorage.removeItem('test');*/
-if(localStorage.getItem('bookmark') === null){
+if(localStorage.getItem('bookmarks') === null){
 	var bookmarks = [];
 	bookmarks.push(bookmark);
-	localStorage.setItem('bookmarks', JSON.stringify(bookmark));
+	localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
 } else{
 	//get bookmarks from localstorage
 	var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
